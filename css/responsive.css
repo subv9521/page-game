@@ -1,0 +1,148 @@
+/* <= 575px || max-width: 575px */
+@media (max-width: 575px) {
+	.header__logo {
+		width: 100%;
+	}
+
+	.header__logo-wrap {
+		margin: 0 auto;
+	}
+
+	.header__user-notify {
+		margin-right: 0;
+	}
+
+	.header__user-mobile {
+		width: 75vw;
+	}
+
+	.side-bar {
+		width: 75%;
+	    padding: 20px 15px 0 15px;
+	}
+
+	.side-bar-list > li {
+	    font-size: 1.3rem;
+	}
+
+	.content {
+	    margin: 60px 0 0 0;
+	}
+
+	.hide-content {
+		display: none;
+	}
+
+	.app__container--change {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	.category {
+	    flex: 1;
+	    margin-right: 20px;
+	}
+
+	.header__user-arrow-down {
+		padding-left: 20px;
+	}
+}
+
+/* >= 576px-----%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (min-width: 576px) {
+	.header__logo {
+		width: 100%;
+	}
+	
+	.header__logo-wrap {
+		margin: 0 auto;
+	}
+
+	.header__user-notify {
+		margin-right: 0;
+	}
+
+	.header__user-mobile {
+		width: 40vw;
+	}
+
+	.side-bar {
+		width: 50%;
+	}
+
+	.side-bar-list > li {
+	    font-size: 1.3rem;
+	}
+
+	.content {
+	    margin: 60px 0 0 0;
+	}
+
+	.category {
+	    flex: 1;
+	    margin-right: 20px;
+	}
+
+	.header__user-arrow-down {
+		padding-left: 20px;
+	}
+}
+
+/* >= 768px-----%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (min-width: 768px) {
+	.header__logo {
+		width: unset;
+	}
+	
+	.header__logo-wrap {
+		margin: unset;
+	}
+
+	.side-bar-list > li {
+	    font-size: 1.5rem;
+	}
+
+	.category {
+	    margin-right: unset;
+	}
+
+
+}
+
+/* >= 992px-----%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (min-width: 992px) {
+	.header {
+	 /*padding: 0 15px;*/
+	}
+
+    .header__user-notify {
+		margin-right: 30px;
+	}
+
+	.side-bar {
+		width: 20%;
+		margin-right: 20px;
+	}
+
+	.content {
+	    margin: 120px 0 0 0;
+	}
+
+	.category {
+		flex: unset;
+	    width: 25%;
+	}
+
+	.header__user-arrow-down {
+		padding-left: 10px;
+	}
+}
+
+/* >= 1200px-----%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (min-width: 1200px) {
+    .container-fix {
+    	max-width: calc(1310px + 30px)
+    }
+    
+
+}   
+

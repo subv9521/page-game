@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash Board</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./OwlCarousel/owl.theme.default.css">
+
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./bootstrap-4/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>                     
+    <header class="header">
+        <div class="container container-fix">
+            <div class="header__wrap d-flex align-items-center justify-content-between">
+                <div class="header__logo d-flex align-items-center justify-content-between">
+                    <a href="#" class="header__logo-menu" onclick="openSideBar()">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <a class="header__logo-wrap" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="header__logo-text">moderno</p>
+                    </a>
+                </div>
+
+                <div class="header__search d-none d-md-block">
+                   <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                   <input type="text" placeholder="Search for anything">
+                </div>
+
+                <div class="header__user d-flex align-items-center justify-content-between">
+                    <div class="header__user-notify">
+                       <i class="header__user-notify-icon fa-regular fa-bell"></i>
+                        <span>2</span>
+                    </div>
+                   <a class="header__user-avatar d-none d-lg-block">
+                       <img src="./img/avatar.png" alt="">
+                   </a>
+                   <span class="header__user-name d-none d-lg-block">Hi, Michael</span>
+
+                   <div class="header__user-info" onclick="openMenuUser()">
+                       <i class="header__user-arrow-down fas fa-angle-down"></i>
+
+                        <div class="header__user-mobile d-none d-lg-none">
+                            <div class="header__mobile-search d-flex align-items-center justify-content-between">
+                               <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
+                               <input type="text" placeholder="Search for anything">
+                               <i class="header__mobile-close-icon fas fa-times"></i>
+                            </div>
+                            <div class="header__mobile-user">
+                                <a class="header__mobile-avatar">
+                                   <img src="./img/avatar.png" alt="">
+                               </a>
+                               <span class="header__mobile-user-name">Hi, Michael</span>
+                            </div>
+                        </div>
+                   </div>
+                </div>     
+            </div>
+        </div>
+    </header>
+    
+    <div class="app__container">
+        <div class="app__container-wrap d-flex justify-content-between">
+            <div class="side-bar d-none">
+                <div class="side-bar__user-avatar">
+                    <span>2</span>
+                    <a class="side-bar__avatar">
+                       <img src="./img/avatar.png" alt="">
+                    </a>
+                </div>
+                <span class="side-bar__user-name">Michael D. Powell</span>
+                <span class="side-bar__user-skill">Poker Master</span>
+
+                <div class="cup">
+                    <a href="" class="cup-img">
+                        <img src="./img/cup1.jpg" alt="">
+                    </a>
+                    <a href="" class="cup-img">
+                        <img src="./img/cup2.jpg" alt="">
+                    </a>
+                    <a href="" class="cup-img">
+                        <img src="./img/cup3.jpg" alt="">
+                    </a>
+                </div>
+
+                <ul class="side-bar-list">
+                    <li class="side-bar-item side-bar-game">
+                        <a href="#" class="side-bar-link">
+                            <i class="far fa-gamepad"></i>
+                            <p>Game</p>
+                            <span>3</span>
+                        </a>
+                        <ul class="side-bar__sub-list d-none">
+                            <li class="side-bar-item__child">
+                                <a href="" class="side-bar-link">
+                                    <i class="opacity-0 far fa-gamepad"></i>
+                                    <p>Competitions</p>
+                                </a>
+                            </li>
+                            <li class="side-bar-item__child">
+                                <a href="" class="side-bar-link">
+                                    <i class="opacity-0 far fa-gamepad"></i>
+                                    <p>Pending</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="side-bar-item">
+                        <a href="" class="side-bar-link">
+                            <i class="far fa-film"></i>
+                            <p>Videos</p>
+                            <span>3</span>
+                        </a>
+                    </li>
+                    <li class="side-bar-item">
+                        <a href="" class="side-bar-link">
+                            <i class="far fa-sticky-note"></i>
+                            <p>Events</p>
+                            <span>6</span>
+                        </a>
+                    </li>
+                    <li class="side-bar-item">
+                        <a href="" class="side-bar-link">
+                            <i class="far fa-tachometer-alt-fast"></i>
+                            <p>Leaderboards</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <section class="content">
+                <nav class="nav-content d-flex justify-content-between align-items-center">
+                    <div class="category">
+                        <span>Categories</span>
+                        <i class="category__arrow-down-link fas fa-angle-down"></i>
+                        <ul class="catagory-list">
+                            <li><a href="">Categories 1</a></li>
+                            <li><a href="">Categories 2</a></li>
+                            <li><a href="">Categories 3</a></li>
+                            <li><a href="">Categories 4</a></li>
+                        </ul>
+                    </div>
+                    <ul class="nav-content-list d-none d-md-flex">
+                        <li class="nav-content-item active-nav-content" onclick="changeNavContent('recommended', this)"><a href="#">Recommended</a></li>
+                        <li class="nav-content-item" onclick="changeNavContent('trending games', this)"><a href="#">Trending Games</a></li>
+                        <li class="nav-content-item d-none d-lg-block" onclick="changeNavContent('new releases', this)"><a href="#">New Releases</a></li>
+                    </ul>
+                    <div class="orther-content">
+                        <li class="orther-content-item">
+                            <i class="orther-content-icon far fa-list-alt"></i>
+                        </li>
+                        <li class="orther-content-item">
+                            <i class="orther-content-icon fas fa-list-ul"></i>
+                        </li>
+                    </div>
+                </nav>
+
+                <div class="recommended space-top">
+                    <div class="title-item d-flex justify-content-between align-items-center">
+                        <div class="title-item-text">
+                            <span class="title-product">Don’t Miss them</span><br>
+                            <span class="content-product">Recommended for You</span>
+                        </div>
+                        <button>View all</button>
+                    </div>
+                    <div class="slide-game">
+                        <div class="owl-carousel owl-theme run-slide-game">
+                            <div class="slide-game__item">
+                                <ul class="used-and-vote-wrap">
+                                    <li class="used-and-vote">
+                                        <i class="slide-game__user-icon far fa-user"></i>
+                                        4,991,022 
+                                    </li>
+                                    <li class="used-and-vote slide-game__star-icon">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-hide"></i>
+                                        4
+                                    </li>
+                                </ul>
+                                <div class="slide-game__desc d-flex justify-content-start align-items-center">
+                                    <div class="avatar-thumnail">
+                                        <img src="./img/thumnail1.jpg" alt="">
+                                    </div>
+                                    <div class="slide-game__text">
+                                        <p class="recommeded__text-title">Score! Hero</p>
+                                        <p class="recommeded__text-body">First Touch Games Ltd.</p>
+                                    </div>
+                                </div>
+                                <span class="add-info">Additional Information</span>
+                                <img class="slide-game-item__img" src="./img/game1.png" alt="">
+                            </div>
+                            <div class="slide-game__item">
+                                <ul class="used-and-vote-wrap">
+                                    <li class="used-and-vote">
+                                        <i class="slide-game__user-icon far fa-user"></i>
+                                        4,991,022 
+                                    </li>
+                                    <li class="used-and-vote slide-game__star-icon">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-hide"></i>
+                                        4
+                                    </li>
+                                </ul>
+                                <div class="slide-game__desc d-flex justify-content-start align-items-center">
+                                    <div class="avatar-thumnail">
+                                        <img src="./img/thumnail1.jpg" alt="">
+                                    </div>
+                                    <div class="slide-game__text">
+                                        <p class="recommeded__text-title">Score! Hero</p>
+                                        <p class="recommeded__text-body">First Touch Games Ltd.</p>
+                                    </div>
+                                </div>
+                                <span class="add-info">Additional Information</span>
+                                <img class="slide-game-item__img" src="./img/game2.png" alt="">
+                            </div>
+                            <div class="slide-game__item">
+                                <ul class="used-and-vote-wrap">
+                                    <li class="used-and-vote">
+                                        <i class="slide-game__user-icon far fa-user"></i>
+                                        4,991,022 
+                                    </li>
+                                    <li class="used-and-vote slide-game__star-icon">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-hide"></i>
+                                        4
+                                    </li>
+                                </ul>
+                                <div class="slide-game__desc d-flex justify-content-start align-items-center">
+                                    <div class="avatar-thumnail">
+                                        <img src="./img/thumnail1.jpg" alt="">
+                                    </div>
+                                    <div class="slide-game__text">
+                                        <p class="recommeded__text-title">Score! Hero</p>
+                                        <p class="recommeded__text-body">First Touch Games Ltd.</p>
+                                    </div>
+                                </div>
+                                <span class="add-info">Additional Information</span>
+                                <img class="slide-game-item__img" src="./img/game3.png" alt="">
+                            </div>
+                            <div class="slide-game__item">
+                                <ul class="used-and-vote-wrap">
+                                    <li class="used-and-vote">
+                                        <i class="slide-game__user-icon far fa-user"></i>
+                                        4,991,022 
+                                    </li>
+                                    <li class="used-and-vote slide-game__star-icon">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-hide"></i>
+                                        4
+                                    </li>
+                                </ul>
+                                <div class="slide-game__desc d-flex justify-content-start align-items-center">
+                                    <div class="avatar-thumnail">
+                                        <img src="./img/thumnail1.jpg" alt="">
+                                    </div>
+                                    <div class="slide-game__text">
+                                        <p class="recommeded__text-title">Score! Hero</p>
+                                        <p class="recommeded__text-body">First Touch Games Ltd.</p>
+                                    </div>
+                                </div>
+                                <span class="add-info">Additional Information</span>
+                                <img class="slide-game-item__img" src="./img/game1.png" alt="">
+                            </div>
+                            <div class="slide-game__item">
+                                <ul class="used-and-vote-wrap">
+                                    <li class="used-and-vote">
+                                        <i class="slide-game__user-icon far fa-user"></i>
+                                        4,991,022 
+                                    </li>
+                                    <li class="used-and-vote slide-game__star-icon">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-hide"></i>
+                                        4
+                                    </li>
+                                </ul>
+                                <div class="slide-game__desc d-flex justify-content-start align-items-center">
+                                    <div class="avatar-thumnail">
+                                        <img src="./img/thumnail1.jpg" alt="">
+                                    </div>
+                                    <div class="slide-game__text">
+                                        <p class="recommeded__text-title">Score! Hero</p>
+                                        <p class="recommeded__text-body">First Touch Games Ltd.</p>
+                                    </div>
+                                </div>
+                                <span class="add-info">Additional Information</span>
+                                <img class="slide-game-item__img" src="./img/game2.png" alt="">
+                            </div>
+                            <div class="slide-game__item">
+                                <ul class="used-and-vote-wrap">
+                                    <li class="used-and-vote">
+                                        <i class="slide-game__user-icon far fa-user"></i>
+                                        4,991,022 
+                                    </li>
+                                    <li class="used-and-vote slide-game__star-icon">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-hide"></i>
+                                        4
+                                    </li>
+                                </ul>
+                                <div class="slide-game__desc d-flex justify-content-start align-items-center">
+                                    <div class="avatar-thumnail">
+                                        <img src="./img/thumnail1.jpg" alt="">
+                                    </div>
+                                    <div class="slide-game__text">
+                                        <p class="recommeded__text-title">Score! Hero</p>
+                                        <p class="recommeded__text-body">First Touch Games Ltd.</p>
+                                    </div>
+                                </div>
+                                <span class="add-info">Additional Information</span>
+                                <img class="slide-game-item__img" src="./img/game3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trending-game space-top d-none">
+                    <div class="title-item d-flex justify-content-between align-items-center">
+                        <div class="title-item-text">
+                            <span class="title-product">Don’t Miss them</span><br>
+                            <span class="content-product">Trending Games</span>
+                        </div>
+                        <button>View all</button>
+                    </div>
+                    <div class="slide-game">
+                        <div class="owl-carousel owl-theme run-slide-game">
+                            <div class="slide-game__item">
+                                <ul class="used-and-vote-wrap">
+                                    <li class="used-and-vote">
+                                        <i class="slide-game__user-icon far fa-user"></i>
+                                        4,991,022 
+                                    </li>
+                                    <li class="used-and-vote slide-game__star-icon">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-hide"></i>
+                                        4
+                                    </li>
+                                </ul>
+                                <div class="slide-game__desc d-flex justify-content-start align-items-center">
+                                    <div class="avatar-thumnail">
+                                        <img src="./img/thumnail1.jpg" alt="">
+                                    </div>
+                                    <div class="slide-game__text">
+                                        <p class="recommeded__text-title">Score! Hero</p>
+                                        <p class="recommeded__text-body">First Touch Games Ltd.</p>
+                                    </div>
+                                </div>
+                                <span class="add-info">Additional Information</span>
+                                <img class="slide-game-item__img" src="./img/game3.png" alt="">
+                            </div>
+                            <div class="slide-game__item">
+                                <ul class="used-and-vote-wrap">
+                                    <li class="used-and-vote">
+                                        <i class="slide-game__user-icon far fa-user"></i>
+                                        4,991,022 
+                                    </li>
+                                    <li class="used-and-vote slide-game__star-icon">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-hide"></i>
+                                        4
+                                    </li>
+                                </ul>
+                                <div class="slide-game__desc d-flex justify-content-start align-items-center">
+                                    <div class="avatar-thumnail">
+                                        <img src="./img/thumnail1.jpg" alt="">
+                                    </div>
+                                    <div class="slide-game__text">
+                                        <p class="recommeded__text-title">Score! Hero</p>
+                                        <p class="recommeded__text-body">First Touch Games Ltd.</p>
+                                    </div>
+                                </div>
+                                <span class="add-info">Additional Information</span>
+                                <img class="slide-game-item__img" src="./img/game2.png" alt="">
+                            </div>
+                            <div class="slide-game__item">
+                                <ul class="used-and-vote-wrap">
+                                    <li class="used-and-vote">
+                                        <i class="slide-game__user-icon far fa-user"></i>
+                                        4,991,022 
+                                    </li>
+                                    <li class="used-and-vote slide-game__star-icon">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-hide"></i>
+                                        4
+                                    </li>
+                                </ul>
+                                <div class="slide-game__desc d-flex justify-content-start align-items-center">
+                                    <div class="avatar-thumnail">
+                                        <img src="./img/thumnail1.jpg" alt="">
+                                    </div>
+                                    <div class="slide-game__text">
+                                        <p class="recommeded__text-title">Score! Hero</p>
+                                        <p class="recommeded__text-body">First Touch Games Ltd.</p>
+                                    </div>
+                                </div>
+                                <span class="add-info">Additional Information</span>
+                                <img class="slide-game-item__img" src="./img/game1.png" alt="">
+                            </div>
+                            <div class="slide-game__item">
+                                <ul class="used-and-vote-wrap">
+                                    <li class="used-and-vote">
+                                        <i class="slide-game__user-icon far fa-user"></i>
+                                        4,991,022 
+                                    </li>
+                                    <li class="used-and-vote slide-game__star-icon">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-hide"></i>
+                                        4
+                                    </li>
+                                </ul>
+                                <div class="slide-game__desc d-flex justify-content-start align-items-center">
+                                    <div class="avatar-thumnail">
+                                        <img src="./img/thumnail1.jpg" alt="">
+                                    </div>
+                                    <div class="slide-game__text">
+                                        <p class="recommeded__text-title">Score! Hero</p>
+                                        <p class="recommeded__text-body">First Touch Games Ltd.</p>
+                                    </div>
+                                </div>
+                                <span class="add-info">Additional Information</span>
+                                <img class="slide-game-item__img" src="./img/game3.png" alt="">
+                            </div>
+                            <div class="slide-game__item">
+                                <ul class="used-and-vote-wrap">
+                                    <li class="used-and-vote">
+                                        <i class="slide-game__user-icon far fa-user"></i>
+                                        4,991,022 
+                                    </li>
+                                    <li class="used-and-vote slide-game__star-icon">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-hide"></i>
+                                        4
+                                    </li>
+                                </ul>
+                                <div class="slide-game__desc d-flex justify-content-start align-items-center">
+                                    <div class="avatar-thumnail">
+                                        <img src="./img/thumnail1.jpg" alt="">
+                                    </div>
+                                    <div class="slide-game__text">
+                                        <p class="recommeded__text-title">Score! Hero</p>
+                                        <p class="recommeded__text-body">First Touch Games Ltd.</p>
+                                    </div>
+                                </div>
+                                <span class="add-info">Additional Information</span>
+                                <img class="slide-game-item__img" src="./img/game2.png" alt="">
+                            </div>
+                            <div class="slide-game__item">
+                                <ul class="used-and-vote-wrap">
+                                    <li class="used-and-vote">
+                                        <i class="slide-game__user-icon far fa-user"></i>
+                                        4,991,022 
+                                    </li>
+                                    <li class="used-and-vote slide-game__star-icon">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-hide"></i>
+                                        4
+                                    </li>
+                                </ul>
+                                <div class="slide-game__desc d-flex justify-content-start align-items-center">
+                                    <div class="avatar-thumnail">
+                                        <img src="./img/thumnail1.jpg" alt="">
+                                    </div>
+                                    <div class="slide-game__text">
+                                        <p class="recommeded__text-title">Score! Hero</p>
+                                        <p class="recommeded__text-body">First Touch Games Ltd.</p>
+                                    </div>
+                                </div>
+                                <span class="add-info">Additional Information</span>
+                                <img class="slide-game-item__img" src="./img/game1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-trending space-top">
+                    <div class="title-item d-flex justify-content-between align-items-center">
+                        <div class="title-item-text">
+                            <span class="title-product">This Week’s</span><br>
+                            <span class="content-product">Trending Games</span>
+                        </div>
+                        <button>View all</button>
+                    </div>
+
+                    <div class="week-trending__slide">
+                        <div class="owl-carousel owl-theme run-week-trending__slide">
+                            <div class="week-trending__item">
+                                <ul class="week-trending__kind">
+                                    <li class="week-trending__avatar-img">
+                                        <img src="./img/thumnal-game1.jpg" alt="">
+                                    </li>
+                                    <li class="week-trending__desc">
+                                        <h2>Block Craft 3D</h2>
+                                        <p>Fun Games </p>
+                                    </li>
+                                    <li class="week-trending__option">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </li>
+                                </ul>
+                                <ul class="week-trending__total-user d-flex justify-content-start align-items-center">
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <li><img src="./img/user2.jpg" alt=""></li>
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <li><img src="./img/user2.jpg" alt=""></li>
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <p> 331,851 total</p>
+                                </ul>
+                            </div>
+                            <div class="week-trending__item">
+                                <ul class="week-trending__kind">
+                                    <li class="week-trending__avatar-img">
+                                        <img src="./img/thumnal-game1.jpg" alt="">
+                                    </li>
+                                    <li class="week-trending__desc">
+                                        <h2>Block Craft 3D</h2>
+                                        <p>Fun Games </p>
+                                    </li>
+                                    <li class="week-trending__option">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </li>
+                                </ul>
+                                <ul class="week-trending__total-user d-flex justify-content-start align-items-center">
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <li><img src="./img/user2.jpg" alt=""></li>
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <li><img src="./img/user2.jpg" alt=""></li>
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <p> 331,851 total</p>
+                                </ul>
+                            </div>
+                            <div class="week-trending__item">
+                                <ul class="week-trending__kind">
+                                    <li class="week-trending__avatar-img">
+                                        <img src="./img/thumnal-game1.jpg" alt="">
+                                    </li>
+                                    <li class="week-trending__desc">
+                                        <h2>Block Craft 3D</h2>
+                                        <p>Fun Games </p>
+                                    </li>
+                                    <li class="week-trending__option">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </li>
+                                </ul>
+                                <ul class="week-trending__total-user d-flex justify-content-start align-items-center">
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <li><img src="./img/user2.jpg" alt=""></li>
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <li><img src="./img/user2.jpg" alt=""></li>
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <p> 331,851 total</p>
+                                </ul>
+                            </div>
+                            <div class="week-trending__item">
+                                <ul class="week-trending__kind">
+                                    <li class="week-trending__avatar-img">
+                                        <img src="./img/thumnal-game1.jpg" alt="">
+                                    </li>
+                                    <li class="week-trending__desc">
+                                        <h2>Block Craft 3D</h2>
+                                        <p>Fun Games </p>
+                                    </li>
+                                    <li class="week-trending__option">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </li>
+                                </ul>
+                                <ul class="week-trending__total-user d-flex justify-content-start align-items-center">
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <li><img src="./img/user2.jpg" alt=""></li>
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <li><img src="./img/user2.jpg" alt=""></li>
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <p> 331,851 total</p>
+                                </ul>
+                            </div>
+                            <div class="week-trending__item">
+                                <ul class="week-trending__kind">
+                                    <li class="week-trending__avatar-img">
+                                        <img src="./img/thumnal-game1.jpg" alt="">
+                                    </li>
+                                    <li class="week-trending__desc">
+                                        <h2>Block Craft 3D</h2>
+                                        <p>Fun Games </p>
+                                    </li>
+                                    <li class="week-trending__option">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </li>
+                                </ul>
+                                <ul class="week-trending__total-user d-flex justify-content-start align-items-center">
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <li><img src="./img/user2.jpg" alt=""></li>
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <li><img src="./img/user2.jpg" alt=""></li>
+                                    <li><img src="./img/user1.jpg" alt=""></li>
+                                    <p> 331,851 total</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    
+    <footer class="footer">
+    </footer>
+
+    <script src="./bootstrap-4/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./OwlCarousel/owl.carousel.min.js"></script>
+    <script src="./javascipt/script.js"></script>
+</body>
+</html>
